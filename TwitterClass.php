@@ -91,7 +91,7 @@
 
 		function getCoordinates($city){
 			$coor = "";
-			$html = file_get_contents("http://api.openweathermap.org/data/2.5/find?q=$city&APPID=672c28ac63de884629097722767679e3");
+			$html = file_get_contents("http://api.openweathermap.org/data/2.5/find?q=$city?id=524901&APPID=672c28ac63de884629097722767679e3");
 			$json = json_decode($html);
 			$lat = $json->list[0]->coord->lat;
 			$lon = $json->list[0]->coord->lon;
