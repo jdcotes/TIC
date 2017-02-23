@@ -48,7 +48,7 @@ $data = $twitter->getInfoTwitter($contenedorJSON);
 
 			function initialize(){
 				var mapOptions = {
-					zoom: 16,
+					zoom: 16, 
 					center: new google.maps.LatLng(<?php echo $coor["latitud"] ?>,<?php echo $coor["longitud"] ?>)
 				}
 				var map = new google.maps.Map(document.getElementById('map-canvas'),
