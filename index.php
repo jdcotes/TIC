@@ -14,6 +14,7 @@ else{
 }
 $contenedorJSON = $twitter->getJsongeoTweets($coor["latitud"],$coor["longitud"],"1km",200);
 $data = $twitter->getInfoTwitter($contenedorJSON);
+echo $contenedorJSON;
 ?>
 <html>
 	<head>
@@ -152,7 +153,6 @@ $data = $twitter->getInfoTwitter($contenedorJSON);
 		    	});
 			}
 			google.maps.event.addDomListener(window, 'load', initialize);
-			console.log(<?php $contenedorJSON ?>);
 		</script>
 	</head>
 	<body>
