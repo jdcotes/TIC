@@ -12,7 +12,7 @@ if (isset($_GET["city"])){
 else{
 	$coor = $twitter->getCoordinates("Barranquilla");
 }
-$contenedorJSON = $twitter->getJsongeoTweets($coor["latitud"],$coor["longitud"],"10km",200);
+$contenedorJSON = $twitter->getJsongeoTweets($coor["latitud"],$coor["longitud"],"5km",200);
 $data = $twitter->getInfoTwitter($contenedorJSON);
 // print_r ($contenedorJSON);
 ?>
