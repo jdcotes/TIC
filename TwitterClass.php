@@ -86,7 +86,7 @@
 		            $count++;
 				}
 			}
-			// print_r($rawdata);
+			print_r($rawdata);
 			print_r(count($rawdata));
 			return $rawdata;	
 		}
