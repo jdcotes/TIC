@@ -71,7 +71,7 @@ $data = $twitter->getInfoTwitter($contenedorJSON);
 				?>
 			];
 
-			function setMarkers(map,location){
+			function setMarkers(map,locations){
 				var image = new Array();
 				var tweet = new Array();
 				var user = new Array();
