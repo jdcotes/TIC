@@ -86,6 +86,7 @@
 		            $count++;
 				}
 			}
+			print_r($json);
 			return $rawdata;	
 		}
 
