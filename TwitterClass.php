@@ -16,6 +16,7 @@
 			$lastIdTweet = "";
 			$contenedorJSON = "";
 			$count = 0;
+			$count2 = 0;
 			$cuentasTwitter = "";
 			do {
 				$url = 'https://api.twitter.com/1.1/search/tweets.json';
@@ -46,6 +47,11 @@
 			$rawdata = "";
 			$json = "";
 			for($i=0;$i<count($contenedorJson);$i++){
+				
+				$json = $contenedorJson[$i];
+				$json = json_decode($json);
+				$num_items = count($json->statuses);
+
 				for ($j=0; $j<$num_items; $j++){
 					$user = $json->statuses[$j];
 					$id_tweet = $user->id_str;
