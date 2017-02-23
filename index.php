@@ -42,7 +42,7 @@ $data = $twitter->getInfoTwitter($contenedorJSON);
 			text-align: center;
 		}
 		</style>
-		<script src = "https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false"></script>
+		<!-- <script src = "https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false"></script> -->
 		<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDsFelqvBHeiBZ9KEmCJ31cVXQjdo0aASk" async defer></script>
 		<script>
 
