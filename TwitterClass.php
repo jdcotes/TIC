@@ -70,7 +70,7 @@
 						$longitud = 0;
 					}
 					$rawdata[$count][0] = $fecha;
-					$rawdata[$count]["FECHA"] = $fecha
+					$rawdata[$count]["FECHA"] = $fecha;
 					$rawdata[$count][1] = $imagen;
 					$rawdata[$count]["imagen"] = $imagen;
 					$rawdata[$count][3] = $url_imagen;
