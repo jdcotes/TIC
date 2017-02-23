@@ -14,7 +14,7 @@ else{
 }
 $contenedorJSON = $twitter->getJsongeoTweets($coor["latitud"],$coor["longitud"],"1km",200);
 $data = $twitter->getInfoTwitter($contenedorJSON);
-echo "<div> $contenedorJSON </div>";
+echo "<div>" $contenedorJSON "</div>";
 ?>
 <html>
 	<head>
