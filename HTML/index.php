@@ -371,7 +371,7 @@
                           echo '<thead>';
                           for($i=1;$i<count($rawdata[0]);$i=$i+2){
                                next($rawdata[0]);
-                               echo "<th><b>".key($rawdata[0])."</b></th>";
+                               echo "<td><b>".key($rawdata[0])."</b></td>";
                                next($rawdata[0]);
                           }
                           echo '</thead>';
