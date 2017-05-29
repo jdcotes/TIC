@@ -349,7 +349,7 @@
                           $columnas = count($rawdata[0])/2;
                           //echo $columnas;
                           $filas = count($rawdata);
-                          echo "<br>".$filas."<br>";
+                          //echo "<br>".$filas."<br>";
                           // //Añadimos los titulos
                           for($i=1;$i<count($rawdata[0]);$i=$i+2){
                                next($rawdata[0]);
