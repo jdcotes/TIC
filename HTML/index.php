@@ -33,12 +33,12 @@
                         overflow: auto;
                         width:500px;
                     }
-                    #tweets  td {
+                    /*#tweets  td {
                         padding: 3px 15px;
                         width:200px;
                         border: 1px solid black;
                     }
-
+*/
        </style>
         <!-- Favicon -->
         <!-- <link href="favicon.ico" rel="shortcut icon"> -->
