@@ -345,7 +345,7 @@
                       }
                         function displayTable($rawdata){
                           //DIBUJAR TABLA
-                          echo '<table';
+                          echo '<table>';
                           $columnas = count($rawdata[0])/2;
                           //echo $columnas;
                           $filas = count($rawdata);
