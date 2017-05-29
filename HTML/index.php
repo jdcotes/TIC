@@ -24,13 +24,23 @@
 */            height: 500px;
               width: 500px;
           }
-          #tweets tbody {
-            background-color: #ddd;
-            height: 500px;
-            overflow: auto;
-            width:500px;
-            display:block;
-          }
+          #tweets  table {
+                        background-color: #aaa;
+                    }
+                    tbody {
+                        background-color: #ddd;
+                        height: 100px;
+                        overflow: auto;
+                        width:200px;
+                    }
+                    td {
+                        padding: 3px 15px;
+                        width:60px;
+                        border: 1px solid black;
+                    }
+
+                    thead > tr, tbody{
+                        display:block;}
 
         </style>
         <!-- Favicon -->
