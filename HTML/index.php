@@ -26,9 +26,9 @@
           }
           #tweets tbody {
             background-color: #ddd;
-            height: 100px;
+            height: 500px;
             overflow: auto;
-            width:200px;
+            width:500px;
           }
 
           #tweets thead > tr, tbody{
