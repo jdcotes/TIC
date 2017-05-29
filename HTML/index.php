@@ -32,13 +32,15 @@
                         height: 100px;
                         overflow: auto;
                         width:200px;
-                        display:block;
                     }
                     #tweets  td {
                         padding: 3px 15px;
                         width:60px;
                         border: 1px solid black;
                     }
+
+                    #tweets thead > tr, tbody{
+                        display:block;}
 
         </style>
         <!-- Favicon -->
