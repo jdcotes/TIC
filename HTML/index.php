@@ -24,14 +24,14 @@
 */            height: 500px;
               width: 500px;
           }
-          tbody {
+          #tweets tbody {
             background-color: #ddd;
             height: 100px;
             overflow: auto;
             width:200px;
           }
 
-          thead > tr, tbody{
+          #tweets thead > tr, tbody{
             display:block;}
 
         </style>
@@ -354,7 +354,7 @@
                       }
                         function displayTable($rawdata){
                           //DIBUJAR TABLA
-                          echo '<table overflow = "auto">';
+                          echo '<table id = "tweets">';
                           $columnas = count($rawdata[0])/2;
                           //echo $columnas;
                           $filas = count($rawdata);
