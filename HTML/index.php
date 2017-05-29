@@ -368,6 +368,7 @@
                           $filas = count($rawdata);
                           //echo "<br>".$filas."<br>";
                           // //Añadimos los titulos
+                          echo '<tbody>';
                           echo '<thead>';
                           for($i=1;$i<count($rawdata[0]);$i=$i+2){
                                next($rawdata[0]);
@@ -375,7 +376,6 @@
                                next($rawdata[0]);
                           }
                           echo '</thead>';
-                          echo '<tbody>';
                           for($i=0;$i<$filas;$i++){
                                echo "<tr>";
                                for($j=0;$j<$columnas;$j++){
