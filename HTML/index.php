@@ -31,6 +31,9 @@
             width:200px;
           }
 
+          thead > tr, tbody{
+            display:block;}
+
         </style>
         <!-- Favicon -->
         <!-- <link href="favicon.ico" rel="shortcut icon"> -->
