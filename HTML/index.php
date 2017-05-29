@@ -29,10 +29,8 @@
             height: 500px;
             overflow: auto;
             width:500px;
+            display:block;
           }
-
-          #tweets thead > tr, tbody{
-            display:block;}
 
         </style>
         <!-- Favicon -->
