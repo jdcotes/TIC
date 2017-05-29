@@ -32,6 +32,7 @@
                         height: 500px;
                         overflow: auto;
                         width:500px;
+                        display:block;
                     }
                     /*#tweets  td {
                         padding: 3px 15px;
