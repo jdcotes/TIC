@@ -24,6 +24,12 @@
 */            height: 500px;
               width: 500px;
           }
+          tbody {
+            background-color: #ddd;
+            height: 100px;
+            overflow: auto;
+            width:200px;
+          }
 
         </style>
         <!-- Favicon -->
@@ -356,6 +362,7 @@
                                echo "<th><b>".key($rawdata[0])."</b></th>";
                                next($rawdata[0]);
                           }
+                          echo '<tbody>';
                           for($i=0;$i<$filas;$i++){
                                echo "<tr>";
                                for($j=0;$j<$columnas;$j++){
@@ -363,6 +370,7 @@
                                }
                                echo "</tr>";
                           }
+                          echo '</tbody>';
                           echo '</table>';
                           print_r($rawdata[0][0]);
                       }
