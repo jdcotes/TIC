@@ -29,14 +29,14 @@
                     }
                   #tweets tbody {
                         background-color: #ddd;
-                        height: 100px;
+                        height: 500px;
                         overflow: auto;
-                        width:200px;
+                        width:500px;
                         display:block;
                     }
                     #tweets  td {
                         padding: 3px 15px;
-                        width:60px;
+                        width:200px;
                         border: 1px solid black;
                     }
 
