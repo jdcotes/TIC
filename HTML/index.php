@@ -26,7 +26,7 @@
           }
              table {
                         background-color: #aaa;
-                        border: 1px;
+                        border: 1px solid black;
                     }
                   #tweets tbody {
                         /*background-color: #ddd;*/
