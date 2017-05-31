@@ -309,20 +309,20 @@
         <div class = "row margin-vert-40"> </div>
         </center>
         <script>
-            var beaches = [
-                <?php 
-               for($i=0;$i<5;$i++){
+        //     var beaches = [
+        //         <?php 
+        //        for($i=0;$i<5;$i++){
                   
-                  $latitud = str_replace(",", ".", $rawdata[$i][3]);
-                  $longitud = str_replace(",", ".", $rawdata[$i][4]);
-                  if($latitud == 0 && $longitud == 0){
-                      continue;
-                  }else{              
-                      echo "[$latitud, $longitud, $i],\n";
-                  }
-                }
-                ?>
-        ];
+        //           $latitud = str_replace(",", ".", $rawdata[$i][3]);
+        //           $longitud = str_replace(",", ".", $rawdata[$i][4]);
+        //           if($latitud == 0 && $longitud == 0){
+        //               continue;
+        //           }else{              
+        //               echo "[$latitud, $longitud, $i],\n";
+        //           }
+        //         }
+        //         ?>
+        // ];
         console.log(beaches);
             function setMarker(){
                 var marker = new google.maps.Marker({
