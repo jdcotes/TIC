@@ -379,11 +379,22 @@
                           // echo '</thead>';
                            echo '<tbody>';
                           for($i=0;$i<$filas;$i++){
-                               echo "<tr>";
+                               if ($i == 1) {
+                                 echo "<tr><b>";
+                               }
+                               else{
+                                 echo "<tr>";
+                               }
                                for($j=0;$j<$columnas;$j++){
                                    echo "<td>".$rawdata[$i][$j]."</td>";
                                }
-                               echo "</tr>";
+                               if ($i == 1){
+                                echo "</b></tr>";
+                               }
+                               else{
+                                echo "</td>";
+                               }
+                               
                           }
                           echo '</tbody>';
                           echo '</table>';
