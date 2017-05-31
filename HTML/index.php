@@ -315,7 +315,7 @@
                     title: 'Baranquilla'
                 });
             }
-            setmarker();
+            setMarker();
         </script>
 
        <!-- End Content -->
