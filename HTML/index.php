@@ -310,21 +310,20 @@
         </center>
         <script>
             var beaches = [
-<?php 
-       for($i=0;$i<$filas;$i++){
-          //if($i==35) continue;
-          $latitud = str_replace(",", ".", $rawdata[$i]["latitud"]);
-          $longitud = str_replace(",", ".", $rawdata[$i]["longitud"]);
-          $nombre = str_replace("'", "", $rawdata[$i]["nombre"]);
-          if($latitud == 0 && $longitud == 0){
-              continue;
-          }else{              
-              echo "['$nombre', $latitud, $longitud, $i],\n";
-          }
-        }
-?>
-];
-consolelog(beaches);
+                <?php 
+               for($i=0;$i<$filas;$i++){
+                  
+                  $latitud = str_replace(",", ".", $rawdata[$i]["latitud"]);
+                  $longitud = str_replace(",", ".", $rawdata[$i]["longitud"]);
+                  if($latitud == 0 && $longitud == 0){
+                      continue;
+                  }else{              
+                      echo "[$latitud, $longitud, $i],\n";
+                  }
+                }
+                ?>
+        ];
+        consolelog(beaches);
             function setMarker(){
                 var marker = new google.maps.Marker({
                     position:{lat: 10.984463, lng: -74.800978} ,
