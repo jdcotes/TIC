@@ -24,9 +24,9 @@
 */            height: 500px;
               width: 600px;
               border-radius: 21px 21px 21px 21px;
--moz-border-radius: 21px 21px 21px 21px;
--webkit-border-radius: 21px 21px 21px 21px;
-border: 6px solid #000000;
+              -moz-border-radius: 21px 21px 21px 21px;
+              -webkit-border-radius: 21px 21px 21px 21px;
+              border: 6px solid #000000;
           }
 /*                table {
                     background-color: #aaa;
@@ -46,7 +46,7 @@ border: 6px solid #000000;
          #tweets  td {
                     padding: 5px 5px;
                     width:100px;
-                    direction: left;
+                    direction: justify;
                   }
 
        </style>
