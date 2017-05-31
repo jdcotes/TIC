@@ -24,8 +24,9 @@
 */            height: 500px;
               width: 600px;
           }
-          #tweets table {
+             table {
                         background-color: #aaa;
+                        border: 1px;
                     }
                   #tweets tbody {
                         /*background-color: #ddd;*/
