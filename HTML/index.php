@@ -8,7 +8,7 @@
     <head>
         <!-- Title -->
         <title> Robery Finder - Version 1.1</title>
-        <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDsFelqvBHeiBZ9KEmCJ31cVXQjdo0aASk&libraries=visualization">
+        <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDsFelqvBHeiBZ9KEmCJ31cVXQjdo0aASk&libraries=visualization&callback=initMap">
         </script>
         <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.0/jquery.min.js"></script>
         <meta http-equiv="content-type" content="text/html; charset=utf-8" />
@@ -182,7 +182,7 @@
              <td><div id = "map" ></div></td>
              <script>
                  var map;
-                 initMap();
+                 //initMap();
                  function initMap() {
                    map = new google.maps.Map(document.getElementById('map'), {
                    center: {lat: 10.984463, lng: -74.800978},
@@ -301,12 +301,15 @@
                     $rawdata = $twitterObject->getInfoTwitter($jsonraw);
                     $twitterObject->displayTable($rawdata);
                     ?>
+
              </td>
          </tr>
         </table>
         <div class = "row margin-vert-40"> </div>
         </center>
-        
+        <script>
+
+        </script>
 
        <!-- End Content -->
 
