@@ -1,10 +1,6 @@
 var map;
 initMap();
-$.post("GeoTwitter.php",{},function(respuesta) {
- /*bueno para que accedan a cada una de las filas de las tablas es así:*/
-    //var prueba1 = JSON.parse(respuesta);
-    console.log(respuesta);
-  });
+
 function initMap() {
    map = new google.maps.Map(document.getElementById('map'), {
      center: {lat: 10.984463, lng: -74.800978},

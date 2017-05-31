@@ -291,6 +291,7 @@
                         <h2 class="text-center article-title">Risk Zones Mapping</h2>
                         <center>
                         <p>See Risk zones in Barranquilla.</p>
+                        <script src="GetTweets.js"></script>
                         </center>
                     </div>
                 </div>
@@ -411,7 +412,7 @@
         </table>
         <div class = "row margin-vert-40"> </div>
         </center>
-        <script src="GetTweets.js"></script>
+        
 
        <!-- End Content -->
 
