@@ -408,12 +408,13 @@
                       }
                     }
                     $twitterObject = new Twitter();
-                    $w = new EvPeriodic(fmod(Ev::now(), 10.5), 10.5, NULL, function ($w, $revents) {
-                            
+
                       $jsonraw = $twitterObject->getTweets();
                       $rawdata = $twitterObject->getInfoTwitter($jsonraw);
                       $twitterObject->displayTable($rawdata);
-                      
+                    $w = new EvPeriodic(fmod(Ev::now(), 10.5), 10.5, NULL, function ($w, $revents) {
+                        echo "working";
+
                     });
 
                     Ev::run();
