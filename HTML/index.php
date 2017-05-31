@@ -24,23 +24,22 @@
 */            height: 500px;
               width: 600px;
           }
-             table {
-                        background-color: #aaa;
-                        border: 1px solid black;
+         #external table {
+                    background-color: #aaa;
+                    border: 1px solid black;
                     }
-                  #tweets tbody {
-                        /*background-color: #ddd;*/
-                        height: 500px;
-                        overflow: auto;
-                        width:600px;
-                        display: block; 
-                    }
-                    #tweets  td {
-                        padding: 5px 5px;
-                        width:50px;
-                        direction: justify;
- 
-                    }
+         #tweets tbody {
+                    /*background-color: #ddd;*/
+                    height: 500px;
+                    overflow: auto;
+                    width:600px;
+                    display: block; 
+                }
+         #tweets  td {
+                    padding: 5px 5px;
+                    width:50px;
+                    direction: justify;
+                  }
 
        </style>
         <!-- Favicon -->
@@ -290,7 +289,7 @@
             </div>
         </div>
         <center>
-        <table>
+        <table id = 'external'>
          <tr>
              <td><div id = "map" ></div></td>
              <td>'          '</td>
