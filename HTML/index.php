@@ -22,7 +22,7 @@
 /*            height: 80%;
             width: 80%;
 */            height: 500px;
-              width: 500px;
+              width: 600px;
           }
           #tweets table {
                         background-color: #aaa;
