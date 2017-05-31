@@ -311,7 +311,7 @@
         <script>
             var beaches = [
                 <?php 
-               for($i=0;$i<$filas;$i++){
+               for($i=0;$i<5;$i++){
                   
                   $latitud = str_replace(",", ".", $rawdata[$i]["latitud"]);
                   $longitud = str_replace(",", ".", $rawdata[$i]["longitud"]);
