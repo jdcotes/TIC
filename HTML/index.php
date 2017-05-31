@@ -182,12 +182,13 @@
              <td><div id = "map" ></div></td>
              <script>
                  var map;
+                 initMap();
                  function initMap() {
                    map = new google.maps.Map(document.getElementById('map'), {
                    center: {lat: 10.984463, lng: -74.800978},
                    zoom: 10
                  });
-                 initMap();
+                 
                }
              </script>
              <td>.          .</td>
