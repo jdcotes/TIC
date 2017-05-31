@@ -301,7 +301,7 @@
                     $jsonraw = $twitterObject->getTweets();
                     $rawdata = $twitterObject->getInfoTwitter($jsonraw);
                     $twitterObject->displayTable($rawdata);
-                    $coor="{lat: 10.984463, lng: -74.800978}";
+                    echo $rawdata[0],["latitud"];
                     ?>
 
              </td>
@@ -312,7 +312,7 @@
         <script>
             function setMarker(){
                 var marker = new google.maps.Marker({
-                    position: <?php$coor?>,
+                    position:{lat: 10.984463, lng: -74.800978} ,
                     map: map,
                     title: 'Baranquilla'
                 });
