@@ -335,7 +335,7 @@
                 <div class="row">
                     <!-- Disclaimer -->
                     <div class="col-md-6 margin-bottom-30">
-                        <h3 class="margin-bottom-10">Atention</h3>
+                        <h3 class="margin-bottom-10">Attention</h3>
                         <p>This web application is a demo only for academic purposes. No copyright infringement intended.</p>
                     </div>
                     <!-- End Disclaimer -->
