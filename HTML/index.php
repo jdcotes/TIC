@@ -408,14 +408,16 @@
                       }
                     }
                     $twitterObject = new Twitter();
-                    $hourly = EvPeriodic(0, 20, NULL, function () {
-                        
+                    $w = new EvPeriodic(fmod(Ev::now(), 10.5), 10.5, NULL, function ($w, $revents) {
+                            
                       $jsonraw = $twitterObject->getTweets();
                       $rawdata = $twitterObject->getInfoTwitter($jsonraw);
                       $twitterObject->displayTable($rawdata);
+                      
                     });
+
                     Ev::run();
-                ?>
+                    ?>
              </td>
          </tr>
         </table>
