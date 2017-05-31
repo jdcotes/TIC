@@ -37,7 +37,7 @@
                 }
          #tweets  td {
                     padding: 5px 5px;
-                    width:50px;
+                    width:100px;
                     direction: left;
                   }
 
