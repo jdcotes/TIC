@@ -24,10 +24,10 @@
 */            height: 500px;
               width: 600px;
           }
-                table {
+/*                table {
                     background-color: #aaa;
                     border: 1px solid black;
-                    }
+                    }*/
          #tweets tbody {
                     /*background-color: #ddd;*/
                     height: 500px;
@@ -38,7 +38,7 @@
          #tweets  td {
                     padding: 5px 5px;
                     width:50px;
-                    direction: justify;
+                    direction: left;
                   }
 
        </style>
