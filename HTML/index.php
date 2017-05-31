@@ -291,6 +291,7 @@
         <table>
          <tr>
              <td><div id = "map" ></div></td>
+             <td>         </td>
              <td>
                 <?php
                     class Twitter{
