@@ -33,6 +33,7 @@
                         overflow: auto;
                         width:600px;
                         display: block;
+                        direction: justify;
 
                     }
                     #tweets  td {
