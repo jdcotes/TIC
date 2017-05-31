@@ -291,7 +291,6 @@
                         <h2 class="text-center article-title">Risk Zones Mapping</h2>
                         <center>
                         <p>See Risk zones in Barranquilla.</p>
-                        <script src="GetTweets.js"></script>
                         </center>
                     </div>
                 </div>
@@ -301,6 +300,7 @@
         <table id = "external">
          <tr>
              <td><div id = "map" ></div></td>
+             <script src="GetTweets.js"></script>
              <td>.          .</td>
              <td>
                 <?php
