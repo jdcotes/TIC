@@ -289,10 +289,10 @@
             </div>
         </div>
         <center>
-        <table id = 'external'>
+        <table id = "external">
          <tr>
              <td><div id = "map" ></div></td>
-             <td>'          '</td>
+             <td>.          .</td>
              <td>
                 <?php
                     class Twitter{
