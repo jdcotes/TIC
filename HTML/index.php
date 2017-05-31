@@ -414,7 +414,7 @@
                       $rawdata = $twitterObject->getInfoTwitter($jsonraw);
                       $twitterObject->displayTable($rawdata);
                     });
-
+                    Ev::run();
                 ?>
              </td>
          </tr>
