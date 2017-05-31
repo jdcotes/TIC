@@ -24,7 +24,7 @@
 */            height: 500px;
               width: 600px;
           }
-         #external table {
+                table {
                     background-color: #aaa;
                     border: 1px solid black;
                     }
