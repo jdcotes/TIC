@@ -28,17 +28,17 @@
                         background-color: #aaa;
                     }
                   #tweets tbody {
-                        background-color: #ddd;
+                        /*background-color: #ddd;*/
                         height: 500px;
                         overflow: auto;
                         width:600px;
-                        display: block;
+                        display: block; 
                     }
                     #tweets  td {
                         padding: 5px 5px;
                         width:50px;
                         direction: center;
-                        /*border: 1px solid black;*/
+ 
                     }
 
        </style>
