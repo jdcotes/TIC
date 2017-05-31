@@ -87,7 +87,7 @@
                 <div class="row">
                     <!-- Logo -->
                     <div class="logo">
-                        <a href="index.html" title="">
+                        <a href="index.php" title="">
                             <img src="assets/img/logo.png" alt="Logo" />
                         </a>
                     </div>
