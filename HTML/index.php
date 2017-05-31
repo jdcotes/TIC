@@ -323,7 +323,7 @@
                 }
                 ?>
         ];
-        consolelog(beaches);
+        console.log(beaches);
             function setMarker(){
                 var marker = new google.maps.Marker({
                     position:{lat: 10.984463, lng: -74.800978} ,
