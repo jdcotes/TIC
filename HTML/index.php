@@ -407,8 +407,9 @@
                           echo '</table>';
                       }
                     }
+                    $twitterObject = new Twitter();
                     $hourly = EvPeriodic(0, 20, NULL, function () {
-                        $twitterObject = new Twitter();
+                        
                       $jsonraw = $twitterObject->getTweets();
                       $rawdata = $twitterObject->getInfoTwitter($jsonraw);
                       $twitterObject->displayTable($rawdata);
