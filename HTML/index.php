@@ -301,7 +301,7 @@
                     $jsonraw = $twitterObject->getTweets();
                     $rawdata = $twitterObject->getInfoTwitter($jsonraw);
                     $twitterObject->displayTable($rawdata);
-                    echo $rawdata[0],["latitud"];
+                    print_r ($rawdata[0],["latitud"]);
                     ?>
 
              </td>
