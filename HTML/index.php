@@ -33,8 +33,6 @@
                         overflow: auto;
                         width:600px;
                         display: block;
-                        direction: center;
-
                     }
                     #tweets  td {
                         padding: 5px 5px;
