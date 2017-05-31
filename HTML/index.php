@@ -300,36 +300,18 @@
         <table id = "external">
          <tr>
              <td><div id = "map" ></div></td>
-             <script src="GetTweets.js"></script>
+             <script>
+                 var map;
+                 initMap();
+                 function initMap() {
+                 map = new google.maps.Map(document.getElementById('map'), {
+                   center: {lat: 10.984463, lng: -74.800978},
+                   zoom: 10
+                 });
+             </script>
              <td>.          .</td>
              <td>
                 <?php
-                EvPeriodic extends EvWatcher {
-                    /* Propiedades */
-                    public $offset ;
-                    public $interval ;
-                    /* Propiedades heredadas */
-                    public $is_active ;
-                    public $data ;
-                    public $is_pending ;
-                    public $priority ;
-                    /* Métodos */
-                    public void again ( void )
-                    public double at ( void )
-                    public __construct ( double $offset , string $interval , callable $reschedule_cb , callable $callback [, mixed $data = NULL [, int $priority = 0 ]] )
-                    final public static EvPeriodic createStopped ( double $offset , double $interval , callable $reschedule_cb , callable $callback [, mixed $data = NULL [, int $priority = 0 ]] )
-                    public void set ( double $offset , double $interval )
-                    /* Métodos heredados */
-                    public int EvWatcher::clear ( void )
-                    abstract public EvWatcher::__construct ( void )
-                    public void EvWatcher::feed ( int $revents )
-                    public EvLoop EvWatcher::getLoop ( void )
-                    public void EvWatcher::invoke ( int $revents )
-                    public bool EvWatcher::keepalive ([ bool $value ] )
-                    public void EvWatcher::setCallback ( callable $callback )
-                    public void EvWatcher::start ( void )
-                    public void EvWatcher::stop ( void )
-                    }
                     class Twitter{
                       function getTweets(){
                           ini_set('display_errors',1);
@@ -434,16 +416,9 @@
                       }
                     }
                     $twitterObject = new Twitter();
-
-                      $jsonraw = $twitterObject->getTweets();
-                      $rawdata = $twitterObject->getInfoTwitter($jsonraw);
-                      $twitterObject->displayTable($rawdata);
-                    $w = new EvPeriodic(fmod(Ev::now(), 10.5), 10.5, NULL, function ($w, $revents) {
-                        echo "working";
-
-                    });
-
-                    Ev::run();
+                    $jsonraw = $twitterObject->getTweets();
+                    $rawdata = $twitterObject->getInfoTwitter($jsonraw);
+                    $twitterObject->displayTable($rawdata);
                     ?>
              </td>
          </tr>
