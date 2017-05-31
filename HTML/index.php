@@ -31,7 +31,7 @@
                         background-color: #ddd;
                         height: 500px;
                         overflow: auto;
-                        width:700px;
+                        width:500px;
                         display: block;
                     }
                     #tweets  td {
