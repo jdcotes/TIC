@@ -360,10 +360,10 @@
                               $rawdata[$count]["Nombre"]="@".$screen_name;
                               $rawdata[$count][2]=$tweet;
                               $rawdata[$count]["Tweet"]=$tweet;
-                              //$rawdata[$count][5]=$latitud;
-                              //$rawdata[$count]["Latitud"]=$latitud;
-                              //$rawdata[$count][6]=$longitud;
-                              //$rawdata[$count]["Longitud"]=$longitud;
+                              $rawdata[$count][3]=$latitud;
+                              $rawdata[$count]["Latitud"]=$latitud;
+                              $rawdata[$count][4]=$longitud;
+                              $rawdata[$count]["Longitud"]=$longitud;
                               $count++;
                             }
                           }
@@ -389,12 +389,17 @@
                           for($i=0;$i<$filas;$i++){
                                echo "<tr>";
                                for($j=0;$j<$columnas;$j++){
-                                   if($j == 1){
-                                    echo "<td><b>".$rawdata[$i][$j]."</b></td>";
+                                   if($j>2){
+
                                    }
                                    else{
-                                    echo "<td>".$rawdata[$i][$j]."</td>";
-                                   }
+                                       if($j == 1){
+                                        echo "<td><b>".$rawdata[$i][$j]."</b></td>";
+                                       }
+                                       else{
+                                        echo "<td>".$rawdata[$i][$j]."</td>";
+                                       }
+                                    }
                                }
                                echo "</tr>";
                           }
