@@ -34,10 +34,10 @@
                     overflow: auto;
                     width:600px;
                     display: block;
-                    border-radius: 190px 190px 190px 190px;
--moz-border-radius: 190px 190px 190px 190px;
--webkit-border-radius: 190px 190px 190px 190px;
-border: 6px solid #000000; 
+                    border-radius: 21px 21px 21px 21px;
+                    -moz-border-radius: 21px 21px 21px 21px;
+                    -webkit-border-radius: 21px 21px 21px 21px;
+                    border: 6px solid #000000;
                 }
          #tweets  td {
                     padding: 5px 5px;
