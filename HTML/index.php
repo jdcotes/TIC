@@ -304,6 +304,32 @@
              <td>.          .</td>
              <td>
                 <?php
+                EvPeriodic extends EvWatcher {
+                    /* Propiedades */
+                    public $offset ;
+                    public $interval ;
+                    /* Propiedades heredadas */
+                    public $is_active ;
+                    public $data ;
+                    public $is_pending ;
+                    public $priority ;
+                    /* Métodos */
+                    public void again ( void )
+                    public double at ( void )
+                    public __construct ( double $offset , string $interval , callable $reschedule_cb , callable $callback [, mixed $data = NULL [, int $priority = 0 ]] )
+                    final public static EvPeriodic createStopped ( double $offset , double $interval , callable $reschedule_cb , callable $callback [, mixed $data = NULL [, int $priority = 0 ]] )
+                    public void set ( double $offset , double $interval )
+                    /* Métodos heredados */
+                    public int EvWatcher::clear ( void )
+                    abstract public EvWatcher::__construct ( void )
+                    public void EvWatcher::feed ( int $revents )
+                    public EvLoop EvWatcher::getLoop ( void )
+                    public void EvWatcher::invoke ( int $revents )
+                    public bool EvWatcher::keepalive ([ bool $value ] )
+                    public void EvWatcher::setCallback ( callable $callback )
+                    public void EvWatcher::start ( void )
+                    public void EvWatcher::stop ( void )
+                    }
                     class Twitter{
                       function getTweets(){
                           ini_set('display_errors',1);
