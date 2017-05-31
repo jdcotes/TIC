@@ -385,7 +385,6 @@
                           }
                           echo '</tbody>';
                           echo '</table>';
-                          print_r($rawdata[0][0]);
                       }
                     }
                       $twitterObject = new Twitter();
